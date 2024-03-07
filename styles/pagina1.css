@@ -1,0 +1,61 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.section img{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: orangered;
+
+}
+
+.menu1{
+    background-color: rgb(57, 57, 154);
+    display: grid;
+    grid-template-columns: 5% 40% 15% 20% 20% 5%;
+
+}
+
+.menu1 button{
+    background-color: rgb(57, 57, 154);
+    border: none;
+}
+
+.senai{
+    background-image: url(./../assets/senai-logo-0.png);
+    height: 10vh;
+    width: 20vw;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.itens{
+    margin-top: 3vh;
+}
+
+.menu2 a{
+    color: aliceblue;
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .menu2{
+        display: none;
+    }
+    
+       
+}
+@media screen and (min-width: 768px){
+    .menu2{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: rgb(57, 57, 154);
+    }
+    
+
+
+       
+}

@@ -1,22 +1,55 @@
 @media screen and (min-width: 320px) and (max-width: 767px){
     body{
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         display: grid;
         align-items: center;
         justify-content: space-around;
         background-image: url(./../assets/alchemyrefiner_alchemymagic_1_d46a4bf4-bcc8-4966-b635-73e2d2a91d75_0.jpg);
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
         
     }
         
-    } 
-    .container{
-        margin-top: 38vh;
-    } 
+    .imagem{
+        width: 0%;
+        height: 0%;
+
+    }
+    
+}
+@media screen and (min-width: 768px){
+    body{
+        width: 100%;
+        height: 80vh;
+        display: grid;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    .imagem{
+        background-image: url(./../assets/alchemyrefiner_alchemymagic_1_d46a4bf4-bcc8-4966-b635-73e2d2a91d75_0.jpg);
+        width: 50vw; 
+        height: 100vh;
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
     
 
-@media screen and (min-width: 768px){
+    }
     
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        overflow: hidden; 
+    }
+
+    .login{
+        margin-left: 20vw;
+        margin-top: 38vh;
+    }
     
 
     

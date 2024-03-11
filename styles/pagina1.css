@@ -4,26 +4,62 @@ body{
     margin: 0;
     padding: 0;
 }
-
-.section img{
-    display: grid;
-    height: 100vh;
+header{
     width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+}
+section img{
+
+    height: 10vh;
+    width: 100%;
     background-color: orangered;
 
 }
+section{
+    height: 10vh;
+    border: none;
+}
 
 .menu1{
-    background-color: rgb(57, 57, 154);
+    width: 100vw;
+    background-color: #045cac;
     display: grid;
-    grid-template-columns: 5% 40% 15% 20% 20% 5%;
+    grid-template-columns: 8% 21% 26% 15% 20% 1%;
 
 }
 
 .menu1 button{
-    background-color: rgb(57, 57, 154);
-    border: none;
+    background-color: #045cac;
+    border-color: transparent;
+    border-radius: 10%;
 }
+
+.menu1 button:hover{
+    background-color: #378fe2;
+    
+
+}
+
+#botao1{
+    margin-left: 2vw;
+}
+
+.menu1 .pesquisa{
+    margin-top: 3vh;
+    width: 25vw;
+
+}
+
+.menu1 input{
+    height: 3vh;
+    width: 18vw;
+    border-color:black ;
+}
+
 
 .senai{
     background-image: url(./../assets/senai-logo-0.png);
@@ -35,26 +71,84 @@ body{
 }
 
 .itens{
-    margin-top: 3vh;
+    margin-top: 4vh;
+    
 }
 
-.menu2 a{
-    color: aliceblue;
+.itens button{
+    cursor: pointer;
 }
+
+.meio{
+    margin-left: 1vw;
+}
+
+
 @media screen and (min-width: 320px) and (max-width: 767px){
     .menu2{
         display: none;
     }
+
+    .menuMobile{
+        display: none;
+        flex-direction: column;
+        padding-bottom: 1rem ;
+        background-color: rgb(23, 23, 24);
+        
+    }
+    
+    .menuMobile .itemMenu{
+        display: block;
+        padding-top: 1.2rem;
+        margin-left: 1rem;
+        
+    }
+
+    .itemMenu a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .menu3{
+        display: none;
+    }
+
+
     
        
 }
 @media screen and (min-width: 768px){
     .menu2{
         display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        background-color: rgb(57, 57, 154);
+        grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: rgb(23, 23, 24);
+    }
+
+    .menu2 a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .menuMobile{
+        display: none;
     }
     
+    .menu3{
+        margin-top: 3vh;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: rgb(23, 23, 24);
+
+    }
+
+    .menu3 a{
+        color: aliceblue;
+        text-decoration: none;
+    }
 
 
        
